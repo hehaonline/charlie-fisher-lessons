@@ -16,6 +16,32 @@ npm run dev        # http://localhost:5173
 npm run build      # production build → dist/
 ```
 
+## Where things live
+
+```
+index.html                       fonts, meta, favicon
+src/App.jsx                      page assembly + modal state
+src/data/services.js             ★ all 7 services, prices, FAQ, locations — edit content here
+src/components/
+  Nav.jsx                        fixed header, mobile menu
+  Hero.jsx                       headline + porch photo placeholder + CTAs
+  TrustBadges.jsx                4 trust badges
+  Services.jsx                   7-card services grid
+  Kids.jsx                       "Harmony for Little Hearts"
+  About.jsx                      "Community-Rooted Wisdom"
+  Healing.jsx                    Healing Music Project teaser
+  Stories.jsx                    student stories (honest empty state)
+  FAQ.jsx                        5-question accordion
+  Contact.jsx                    newsletter + locations + email
+  Footer.jsx                     tagline, service area, email
+  StickyBook.jsx                 mobile-only sticky "Book a Lesson" bar
+  BookingModal.jsx               ★ Cal.com embed placeholder + service picker
+  HomeVisitForm.jsx              ★ home-visit intake form (mailto, no backend)
+  SacredGeometry.jsx             SVG geometry library (signature element)
+  PhotoPlaceholder.jsx           warm gradient + geometry photo stand-ins
+src/hooks/useReveal.js           scroll-reveal (respects reduced motion)
+```
+
 ## TODO before launch (all marked with `TODO:` in code)
 
 1. **Cal.com** — create event types, put links in `src/data/services.js`
